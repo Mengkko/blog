@@ -34,6 +34,7 @@ export default {
       '@nuxtjs/google-analytics',
       {
         id: 'G-RQM7CH1H42',
+        dev: process.env.NODE_ENV === 'development',
       },
     ],
   ],
@@ -77,4 +78,4 @@ export default {
       },
     },
   },
-};
+}
