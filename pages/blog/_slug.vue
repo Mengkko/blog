@@ -35,8 +35,8 @@
   </div>
 </template>
 <script>
-import Prism from "~/plugins/prism";
-import siteMetaInfo from "~/data/sitemetainfo";
+import Prism from '~/plugins/prism';
+import siteMetaInfo from '~/data/sitemetainfo';
 
 export default {
   data() {
@@ -46,15 +46,15 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    const article = await $content("articles", params.slug).fetch();
+    const article = await $content('articles', params.slug).fetch();
     return {
       article,
     };
   },
   methods: {
     formatDate(date) {
-      const options = { year: "numeric", month: "long", day: "numeric" };
-      return new Date(date).toLocaleDateString("en", options);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en', options);
     },
   },
   mounted() {
@@ -66,8 +66,8 @@ export default {
       title: this.article.title,
       meta: [
         {
-          hid: "description",
-          name: "description",
+          hid: 'description',
+          name: 'description',
           content: this.article.description,
         },
       ],
