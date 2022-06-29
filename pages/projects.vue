@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import projectsData from "../data/projects";
+import projectsData from '../data/projects';
 
 export default {
   data() {
@@ -42,17 +42,17 @@ export default {
     };
   },
   head: {
-    title: "Md Solaiman | Projects",
+    title: 'Md Solaiman | Projects',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        hid: "description",
-        name: "description",
-        content: "Some of Projects developed by Solaiman",
+        hid: 'description',
+        name: 'description',
+        content: 'Some of Projects developed by Solaiman',
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 };
 </script>
