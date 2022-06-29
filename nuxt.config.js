@@ -1,7 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-  
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "nuxt-blog",
@@ -27,7 +27,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image"],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image", "@nuxtjs/gtm"],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -49,6 +49,10 @@ export default {
     fileLoader: {
       // file-loader options
     },
+  },
+
+  gtm: {
+    id: 'G-RQM7CH1H42'
   },
 
   content: {
