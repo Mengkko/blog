@@ -34,10 +34,11 @@
 
 <script>
 import projectsData from "../data/projects";
+
 export default {
   data() {
     return {
-      projectsData: projectsData,
+      projectsData,
     };
   },
   head: {

@@ -43,7 +43,7 @@
       <div class="flex mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
         <div>Copyright © {{ new Date().getFullYear() }}</div>
         <div>•</div>
-        <a href="/"
+        <a href="static"
           >{{ siteMetadata.author }}'s blog - {{ siteMetadata.slogan }}</a
         >
       </div>
@@ -60,8 +60,9 @@
 </template>
 
 <script>
-import siteMetaInfo from "@/data/sitemetainfo";
-import BuyMeACoffee from "./BuyMeACoffee.vue";
+import siteMetaInfo from "~/data/sitemetainfo";
+import BuyMeACoffee from "~/components/BuyMeACoffee.vue";
+
 export default {
   data() {
     return {

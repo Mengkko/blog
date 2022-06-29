@@ -30,7 +30,7 @@ jobs:
       # 의존 파일 설치 캐싱 된 경우 생략
     - name: Install Dependencies
       if: steps.node-cache.outputs.cache-hit != 'true'
-      run: yarn
+      run: npm install
       shell: bash
     # generate
     - name: Build

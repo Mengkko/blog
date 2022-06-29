@@ -1,24 +1,24 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "nuxt-blog",
+    title: 'nuxt-blog',
     htmlAttrs: {
-      lang: "en"
+      lang: 'en',
     },
     meta: [
-      {charset: "utf-8"},
-      {name: "viewport", content: "width=device-width, initial-scale=1"},
-      {hid: "description", name: "description", content: ""},
-      {name: "format-detection", content: "telephone=no"},
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{rel: "icon", type: "image/x-icon", href: "/favicon.ico"}],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/main.css"],
+  css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -27,9 +27,16 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image", ['@nuxtjs/google-analytics', {
-    id: 'G-RQM7CH1H42'
-  }]],
+  buildModules: [
+    '@nuxt/postcss8',
+    '@nuxt/image',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'G-RQM7CH1H42',
+      },
+    ],
+  ],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -40,7 +47,7 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content", "@nuxtjs/svg", "@nuxt/image"],
+  modules: ['@nuxt/content', '@nuxtjs/svg', '@nuxt/image'],
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
@@ -57,7 +64,7 @@ export default {
     liveEdit: false,
     markdown: {
       prism: {
-        theme: "prism-themes/themes/prism-dracula.css",
+        theme: 'prism-themes/themes/prism-dracula.css',
       },
     },
   },
@@ -69,5 +76,5 @@ export default {
         autoprefixer: {},
       },
     },
-  }
+  },
 };

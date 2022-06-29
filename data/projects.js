@@ -1,7 +1,8 @@
 const projectsData = [
   {
     title: "Tailwind Designer Portfolio",
-    description: `Current version. Improved the blog a lot, rebuilt with tailwind`,
+    description:
+      "Current version. Improved the blog a lot, rebuilt with tailwind",
     imgSrc: "",
     href: "#",
     github: "#",
@@ -11,7 +12,8 @@ const projectsData = [
   },
   {
     title: "Tailwind Landing Page",
-    description: `Again, some improvements. Moved from Gastby to Next, started to blog`,
+    description:
+      "Again, some improvements. Moved from Gastby to Next, started to blog",
     imgSrc: "",
     href: "",
     github: "#",
@@ -21,7 +23,8 @@ const projectsData = [
   },
   {
     title: "Web3 - Solana",
-    description: `Current version. Improved the blog a lot, rebuilt with tailwind`,
+    description:
+      "Current version. Improved the blog a lot, rebuilt with tailwind",
     imgSrc: "",
     href: "#",
     github: "#",
@@ -31,7 +34,8 @@ const projectsData = [
   },
   {
     title: "Polygon Scanner API",
-    description: `Again, some improvements. Moved from Gastby to Next, started to blog`,
+    description:
+      "Again, some improvements. Moved from Gastby to Next, started to blog",
     imgSrc: "",
     href: "",
     github: "#",
@@ -41,7 +45,8 @@ const projectsData = [
   },
   {
     title: "Personal website 2.0",
-    description: `Second version of my personal website. Little improvements, showing projects and more.`,
+    description:
+      "Second version of my personal website. Little improvements, showing projects and more.",
     imgSrc: "",
     href: "",
     github: "#",
@@ -51,7 +56,8 @@ const projectsData = [
   },
   {
     title: "Tailwind NuxtJs Blog Starter",
-    description: `First version of my personal website. Nothing spectacular, just to buy domain and try things.`,
+    description:
+      "First version of my personal website. Nothing spectacular, just to buy domain and try things.",
     imgSrc: "",
     href: "",
     github: "https://github.com/mdrathik/tailwind-nuxt-blog-starter",

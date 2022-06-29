@@ -36,7 +36,8 @@
 </template>
 <script>
 import Prism from "~/plugins/prism";
-import siteMetaInfo from "@/data/sitemetainfo";
+import siteMetaInfo from "~/data/sitemetainfo";
+
 export default {
   data() {
     return {
@@ -47,7 +48,7 @@ export default {
   async asyncData({ $content, params }) {
     const article = await $content("articles", params.slug).fetch();
     return {
-      article: article,
+      article,
     };
   },
   methods: {
@@ -60,7 +61,7 @@ export default {
     Prism.highlightAll();
   },
   head() {
-    //console.log(this.article.title);
+    // console.log(this.article.title);
     return {
       title: this.article.title,
       meta: [

@@ -48,9 +48,10 @@
 </template>
 
 <script>
-import Folder from "../assets/icon/folder.svg?inline";
-import External from "../assets/icon/external.svg?inline";
-import Github from "../assets/icon/github.svg?inline";
+import Folder from "../assets/icon/folder.svg";
+import External from "../assets/icon/external.svg";
+import Github from "../assets/icon/github.svg";
+
 export default {
   props: ["title", "description", "href", "github", "tech1", "tech2", "tech3"],
   components: { Folder, External, Github },
