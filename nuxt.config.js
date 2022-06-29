@@ -27,7 +27,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxt/image", "@nuxtjs/gtm"],
+  buildModules: ["@nuxt/postcss8", "@nuxt/image", ['@nuxtjs/google-analytics', {
+    id: 'G-RQM7CH1H42'
+  }]],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -49,10 +51,6 @@ export default {
     fileLoader: {
       // file-loader options
     },
-  },
-
-  gtm: {
-    id: 'G-RQM7CH1H42'
   },
 
   content: {
