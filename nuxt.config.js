@@ -27,23 +27,28 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxt/postcss8',
-    '@nuxt/image',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'G-RQM7CH1H42',
-        dev: process.env.NODE_ENV === 'development',
-      },
-    ],
-  ],
+  buildModules: ['@nuxt/postcss8', '@nuxt/image', '@nuxtjs/firebase'],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
     // experimentWarning: false // hide experimental warning message (disabled by default for tests)
     vue: {
       /* options for vite-plugin-vue2 */
+    },
+  },
+
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyC0uNujAMZBRleTo1F1lrbNNj0MibAq0fk',
+      authDomain: 'blog.myungwoo.dev',
+      projectId: 'myungwoo-dev-blog',
+      storageBucket: 'myungwoo-dev-blog.appspot.com',
+      messagingSenderId: '447482557095',
+      appId: '1:447482557095:web:e362cfb0fccfb161fee182',
+      measurementId: 'G-RQM7CH1H42',
+    },
+    services: {
+      analytics: true,
     },
   },
 
