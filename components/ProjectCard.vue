@@ -48,12 +48,12 @@
 </template>
 
 <script>
-import Folder from "../assets/icon/folder.svg";
-import External from "../assets/icon/external.svg";
-import Github from "../assets/icon/github.svg";
+import Folder from '../assets/icon/folder.svg?inline'
+import External from '../assets/icon/external.svg?inline'
+import Github from '../assets/icon/github.svg?inline'
 
 export default {
-  props: ["title", "description", "href", "github", "tech1", "tech2", "tech3"],
+  props: ['title', 'description', 'href', 'github', 'tech1', 'tech2', 'tech3'],
   components: { Folder, External, Github },
   data() {
     return {
@@ -64,9 +64,9 @@ export default {
       projectTech1: this.tech1,
       projectTech2: this.tech2,
       ProjectTech3: this.tech3,
-    };
+    }
   },
-};
+}
 </script>
 
 <style></style>

@@ -7,7 +7,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/academy.svg"
+            src="~assets/icon/academy.svg?inline"
           />
         </span>
         <h3
@@ -34,7 +34,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/academy.svg"
+            src="~assets/icon/academy.svg?inline"
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
@@ -55,7 +55,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/academy.svg"
+            src="~assets/icon/academy.svg?inline"
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
@@ -75,7 +75,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/home.svg"
+            src="~assets/icon/home.svg?inline"
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
@@ -94,7 +94,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style></style>

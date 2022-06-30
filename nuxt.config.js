@@ -1,3 +1,4 @@
+require('dotenv').config()
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -27,7 +28,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxt/postcss8', '@nuxt/image'],
+  buildModules: ['@nuxt/postcss8', '@nuxt/image', '@nuxtjs/svg'],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -37,7 +38,7 @@ export default {
     },
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content', '@nuxtjs/svg', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxt/image'],
 
   svg: {
     vueSvgLoader: {
@@ -67,5 +68,15 @@ export default {
         autoprefixer: {},
       },
     },
+  },
+
+  env: {
+    FIREBASE_APIKEY: process.env.FIREBASE_APIKEY,
+    FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
+    FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
+    FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET,
+    FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    FIREBASE_APPID: process.env.FIREBASE_APPID,
+    FIREBASE_MEASUREMENT_ID: process.env.FIREBASE_MEASUREMENT_ID,
   },
 }
