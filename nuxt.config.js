@@ -21,13 +21,13 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '@/plugins/firebase', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxt/postcss8', '@nuxt/image', '@nuxtjs/firebase'],
+  buildModules: ['@nuxt/postcss8', '@nuxt/image'],
   vite: {
     /* options for vite */
     // ssr: true // enable unstable server-side rendering for development (false by default)
@@ -36,24 +36,9 @@ export default {
       /* options for vite-plugin-vue2 */
     },
   },
-
-  firebase: {
-    config: {
-      apiKey: 'AIzaSyC0uNujAMZBRleTo1F1lrbNNj0MibAq0fk',
-      authDomain: 'blog.myungwoo.dev',
-      projectId: 'myungwoo-dev-blog',
-      storageBucket: 'myungwoo-dev-blog.appspot.com',
-      messagingSenderId: '447482557095',
-      appId: '1:447482557095:web:e362cfb0fccfb161fee182',
-      measurementId: 'G-RQM7CH1H42',
-    },
-    services: {
-      analytics: true,
-    },
-  },
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ['@nuxt/content', '@nuxtjs/svg', '@nuxt/image'],
+
   svg: {
     vueSvgLoader: {
       // vue-svg-loader options
