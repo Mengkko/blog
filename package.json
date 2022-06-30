@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
+    "@nuxtjs/firebase": "^8.2.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/typography": "^0.5.2",
     "clipboard": "^2.0.10",
