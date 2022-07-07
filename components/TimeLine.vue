@@ -7,7 +7,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/academy.svg?inline"
+            src="~assets/icon/academy.svg?data"
           />
         </span>
         <h3
@@ -34,7 +34,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/academy.svg?inline"
+            src="~assets/icon/academy.svg?data"
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
@@ -55,7 +55,7 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/academy.svg?inline"
+            src="~assets/icon/academy.svg?data"
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
@@ -75,18 +75,18 @@
         >
           <img
             class="w-3 h-3 text-blue-600 dark:text-blue-400"
-            src="~assets/icon/home.svg?inline"
+            src="../assets/icon/home.svg?data"
           />
         </span>
         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-          Born in 1996, July 27
+          Born in 1993, January 27
         </h3>
         <time
           class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-          >Dhaka Bangladesh</time
+          >대한민국 서울</time
         >
         <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-          I couldn't remember any productive work in that time. But
+          평범하게 태어났다.
         </p>
       </li>
     </ol>
