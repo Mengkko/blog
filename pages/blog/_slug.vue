@@ -17,13 +17,13 @@
         <div class="text-slate-900 dark:text-slate-200">
           {{ siteMetadata.author }}
         </div>
-        <a
-          target="_blank"
-          :href="siteMetadata.twitter"
-          class="text-sky-500 hover:text-sky-600 dark:text-sky-400"
-        >
-          @{{ siteMetadata.twitter_user }}
-        </a>
+        <!--        <a-->
+        <!--          target="_blank"-->
+        <!--          :href="siteMetadata.twitter"-->
+        <!--          class="text-sky-500 hover:text-sky-600 dark:text-sky-400"-->
+        <!--        >-->
+        <!--          @{{ siteMetadata.twitter_user }}-->
+        <!--        </a>-->
       </div>
     </div>
     <img
@@ -35,30 +35,30 @@
   </div>
 </template>
 <script>
-import Prism from '~/plugins/prism';
-import siteMetaInfo from '~/data/sitemetainfo';
+import Prism from '~/plugins/prism'
+import siteMetaInfo from '~/data/sitemetainfo'
 
 export default {
   data() {
     return {
       title: 0,
       siteMetadata: siteMetaInfo,
-    };
+    }
   },
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch();
+    const article = await $content('articles', params.slug).fetch()
     return {
       article,
-    };
+    }
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('en', options);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
     },
   },
   mounted() {
-    Prism.highlightAll();
+    Prism.highlightAll()
   },
   head() {
     // console.log(this.article.title);
@@ -71,9 +71,9 @@ export default {
           content: this.article.description,
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
 <style>
 .nuxt-content h2 {
