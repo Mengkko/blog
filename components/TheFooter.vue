@@ -54,21 +54,21 @@
           href="https://github.com/mdrathik/tailwind-nuxtjs-starter-blog"
         ></a>
       </div>
-      <BuyMeACoffee></BuyMeACoffee>
+      <!--      <BuyMeACoffee></BuyMeACoffee>-->
     </div>
   </footer>
 </template>
 
 <script>
-import siteMetaInfo from "~/data/sitemetainfo";
-import BuyMeACoffee from "~/components/BuyMeACoffee.vue";
+import siteMetaInfo from '~/data/sitemetainfo'
+// import BuyMeACoffee from "~/components/BuyMeACoffee.vue";
 
 export default {
   data() {
     return {
       siteMetadata: siteMetaInfo,
-    };
+    }
   },
-  components: { BuyMeACoffee },
-};
+  // components: { BuyMeACoffee },
+}
 </script>
