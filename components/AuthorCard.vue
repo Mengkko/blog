@@ -13,7 +13,7 @@
         >
           {{ siteMetadata.author }}
         </h1>
-        <div class="md:text-lg text-gray-600 dark:text-blue-100">
+        <div class="md:text-sm text-sm text-gray-600 dark:text-blue-100">
           {{ siteMetadata.position }}
         </div>
         <a
@@ -25,16 +25,16 @@
       </div>
     </div>
 
-    <div class="mx-7 hidden md:block">
-      <div class="my-2 text-gray-600 flex dark:text-blue-100">
+    <div class="mt-10 ml-6 mr-6 hidden md:block">
+      <div class="my-2 mr-1 text-gray-600 flex dark:text-blue-100">
         <Mail />
         <a :href="`mailto:${siteMetadata.email}`"> {{ siteMetadata.email }}</a>
       </div>
-      <div class="my-2 text-gray-600 flex dark:text-blue-100">
+      <div class="my-2 mr-1 text-gray-600 flex dark:text-blue-100">
         <Glob />
         <p>{{ siteMetadata.location }}</p>
       </div>
-      <div class="my-2 text-gray-600 flex dark:text-blue-200">
+      <div class="my-2 mr-1 text-gray-600 flex dark:text-blue-200">
         <Github />
         <a :href="siteMetadata.github"> {{ siteMetadata.githubUser }}</a>
       </div>
