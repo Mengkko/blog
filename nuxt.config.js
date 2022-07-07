@@ -38,7 +38,7 @@ export default {
     },
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxt/content', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxt/image', '@nuxtjs/sitemap'],
 
   svg: {
     vueSvgLoader: {
@@ -58,6 +58,17 @@ export default {
       prism: {
         theme: 'prism-themes/themes/prism-dracula.css',
       },
+    },
+  },
+  sitemap: {
+    hostname: 'https://blog.myungwoo.dev',
+    routes: async () => {
+      const { $content } = require('@nuxt/content')
+      const contents = await $content('articles')
+        .only(['slug'])
+        .sortBy('date', 'asc')
+        .fetch()
+      return contents.map(el => `/blog/${el.slug}`)
     },
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
