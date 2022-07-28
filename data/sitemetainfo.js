@@ -13,7 +13,7 @@ const siteMetaInfo = {
   siteUrl: 'https://blog.myungwoo.dev',
   siteRepo: '#',
   siteLogo: '../assets/author.png',
-  image: '~/assets/author.png',
+  image: '@/assets/author.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'ko@myungwoo.dev',
   github: 'https://github.com/mengkko',

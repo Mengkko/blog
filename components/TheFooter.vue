@@ -60,8 +60,8 @@
 </template>
 
 <script>
-import siteMetaInfo from '~/data/sitemetainfo'
-// import BuyMeACoffee from "~/components/BuyMeACoffee.vue";
+import siteMetaInfo from '@/data/sitemetainfo'
+// import BuyMeACoffee from "@/components/BuyMeACoffee.vue";
 
 export default {
   data() {
